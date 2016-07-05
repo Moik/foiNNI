@@ -1,0 +1,119 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  section {
+    padding-top: 60px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .large .menu,
+  .small .menu {    
+    transition: top 0.5s;
+  }
+  .top-wrap nav .menu li {
+    float: none;
+    margin: 0;
+    padding: 5px 0 5px 15px;
+    background: #1a1a1a;
+    text-align: left;
+    border-top: 1px solid #999;
+    border-left: 3px solid transparent;
+  }
+  
+  .top-wrap nav .menu li:hover {
+    border-left: 3px solid #1dde85;
+    background: #222;
+  }
+  .top-wrap nav .menu li a {
+    border-bottom: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .services-item,
+  .price-item,
+  .team-item {
+    width: 47%;
+    margin-right: 6%;
+  }
+  .services-item:nth-child(3n) {
+    margin-right: 6%;
+  }
+  .services-item:nth-child(even),
+  .price-item:nth-child(odd),
+  .team-item:nth-child(even) {
+    margin-right: 0;
+  }
+  .portfolio-item {
+    width: 50%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .menu ul {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .main-head-wrap {
+    margin-top: 60px; 
+  }
+  .services-item,
+  .price-item,
+  .team-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .services-item:nth-child(4),
+  .services-item:nth-child(5) {
+    margin-bottom: 50px;
+  }
+  #portfolio .container {
+    padding: 0;
+  }
+  .portfolio-item {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .see-more {
+    margin-top: 50px;
+  }
+  #contacts input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .about {
+    margin-right: 0;
+  }
+  .price-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .pricing-order {
+    margin-top: 15px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
